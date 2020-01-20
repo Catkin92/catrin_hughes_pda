@@ -89,7 +89,7 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('9999800001')
   })
 
-  it('should display error if you try and divide by 0', function() {
+  it('should display the word error if you try and divide by 0', function() {
     running_total = element(by.css('#running_total'))
     element(by.css('#number9')).click();
     element(by.css('#operator_divide')).click();
